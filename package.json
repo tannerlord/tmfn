@@ -1,0 +1,17 @@
+{
+  "name": "turtle-mountain-forest-nursery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Turtle Mountain Forest Nursery website and order backend on Cloudflare Workers",
+  "scripts": {
+    "images": "node scripts/fetch-images.mjs",
+    "build": "node build/build.mjs",
+    "dev": "wrangler dev",
+    "deploy": "node build/build.mjs && wrangler deploy",
+    "logs": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}

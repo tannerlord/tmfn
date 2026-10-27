@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><clipPath id="tmfn-badge"><rect width="64" height="64" rx="14"/></clipPath></defs>
+  <g clip-path="url(#tmfn-badge)">
+    <rect width="64" height="64" fill="#0b120f"/>
+    <circle cx="46" cy="20" r="7.5" fill="#e2b144"/>
+    <path d="M0 49 C9 41 22 35.5 37 35.5 C48 35.5 57 39 64 43 V64 H0 Z" fill="#1d3a2d"/>
+    <path d="M26 7 L32.2 17.5 L29.2 17.5 L35.4 27 L31.8 27 L38.4 37 L33.8 37 L41 48 L28.4 48 L28.4 55 L23.6 55 L23.6 48 L11 48 L18.2 37 L13.6 37 L20.2 27 L16.6 27 L22.8 17.5 L19.8 17.5 Z" fill="#e8eeea"/>
+    <path d="M8 55.5 H56" stroke="#e2b144" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>

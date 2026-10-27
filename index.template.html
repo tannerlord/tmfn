@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Turtle Mountain Forest Nursery | Cold-Hardy Trees, Bottineau ND</title>
+<meta name="description" content="Zone 3 and colder potted trees and conservation seedlings from the Turtle Mountains of North Dakota. Reserve 2027 spruce, pine, juniper, oak, aspen, larch and fruit trees for $20 each, with pickup in Bottineau County.">
+<link rel="canonical" href="https://turtlemountainforestnursery.com/">
+<meta name="theme-color" content="#060a08">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Turtle Mountain Forest Nursery">
+<meta property="og:title" content="Turtle Mountain Forest Nursery: grown for winters that don't negotiate">
+<meta property="og:description" content="Cold-hardy potted trees for zone 3 and colder. Reserve your 2027 trees online, $20 each, pickup in Bottineau County, ND.">
+<meta property="og:url" content="https://turtlemountainforestnursery.com/">
+<meta property="og:image" content="https://turtlemountainforestnursery.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Turtle Mountain Forest Nursery logo over a night ridgeline of spruce">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Turtle Mountain Forest Nursery">
+<meta name="twitter:description" content="Cold-hardy trees for zone 3 and colder. Reserve 2027 trees online, $20 each.">
+<meta name="twitter:image" content="https://turtlemountainforestnursery.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="modulepreload" href="/assets/data.js">
+<!--JSONLD-->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="#top" aria-label="Turtle Mountain Forest Nursery, back to top"><img src="/favicon.svg" alt="" width="32" height="32"><span>Turtle Mountain <span class="soft">Forest Nursery</span></span></a>
+    <nav class="links" aria-label="Sections">
+      <a href="#ground">Ground</a><a href="#finder">Finder</a><a href="#grow">Grow</a><a href="#windbreak">Windbreak</a><a href="#catalog">Lineup</a><a href="#plant">Planting</a><a href="#ask">Ask</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn primary sm" href="#reserve">Reserve <span class="count num" id="cartCount">0</span></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <div class="eyebrow"><i></i><span>Bottineau, ND</span><span>48.83°N 100.45°W</span><b>USDA zone 3b</b></div>
+    <h1 id="hero-h">Grown for winters that <em>don't negotiate.</em></h1>
+    <p class="lede">Cold-hardy potted trees and conservation seedlings from the Turtle Mountains. Read your soil, find your species, watch it grow forty years, design the windbreak, and reserve your 2027 trees in a couple of minutes.</p>
+    <div class="cta"><a class="btn primary" href="#catalog">Reserve 2027 trees</a><a class="btn" href="#finder">Find your tree</a></div>
+    <div class="telemetry">
+      <div><div class="label">Price</div><div class="v">$20</div><div class="s">per trade-gallon tree</div></div>
+      <div><div class="label">Lineup</div><div class="v">13</div><div class="s">species, zone 2–3 hardy</div></div>
+      <div><div class="label">Winter low</div><div class="v">−35°F</div><div class="s">zone 3b average extreme</div></div>
+      <div><div class="label">First crop</div><div class="v">2027</div><div class="s">wholesale seedlings 2029</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="mod" id="ground" aria-labelledby="ground-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Ground truth</span><span>Bottineau County</span><b>SW → NE</b></div><h2 id="ground-h">Read your ground before you dig.</h2></div>
+      <p class="lede">From the Souris River bottoms to the lakes on top of Turtle Mountain, the county crosses seven kinds of ground. Pick yours to see what's in the soil, which NRCS tree group it falls in, and what to plant.</p>
+    </div>
+    <div class="console">
+      <div class="gt-tabs" role="tablist" aria-label="Landform zones" id="gtTabs"></div>
+      <div class="gt-fig" id="gtFig"></div>
+      <div class="gt-cap"><span class="label">Generalized cross-section, not a survey map. Zones repeat across the county; relief exaggerated.</span><span class="label">Turtle Mountain rises 600–800 ft above the plain</span></div>
+      <div class="split gt-detail" id="gtDetail" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="mod alt" id="finder" aria-labelledby="finder-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Tree finder</span><b>5 questions</b></div><h2 id="finder-h">Five questions. Three trees.</h2></div>
+      <p class="lede">Matches update as you answer. Scores weigh your goal and your soil most, then room, foliage and patience.</p>
+    </div>
+    <div class="console split finder"><div id="fq"></div><div class="results" id="fr" aria-live="polite"></div></div>
+  </div>
+</section>
+
+<section class="mod" id="grow" aria-labelledby="grow-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Time machine</span><b>Year 0 → 40</b></div><h2 id="grow-h">Planting day to year forty.</h2></div>
+      <p class="lede">Pick up to four trees and drag through time. Each curve passes through the NRCS 20-year height for North Dakota and levels off at the tree's mature height.</p>
+    </div>
+    <div class="console split grow">
+      <div class="grow-ctl">
+        <div>
+          <div class="label">Years after planting</div>
+          <div class="yr" aria-live="polite"><small>Year</small><span id="yrOut">10</span></div>
+          <label class="sr" for="yr">Years after planting</label>
+          <input type="range" id="yr" min="0" max="40" step="1" value="10">
+          <div class="ticks"><span>0</span><span>10</span><span>20</span><span>30</span><span>40</span></div>
+        </div>
+        <button class="btn" id="playBtn" type="button">Play 40 years</button>
+        <div class="field"><span class="label">Site quality</span><div class="seg" id="growSoil"></div></div>
+        <div class="field"><span class="label">Trees in the yard <span id="selCount"></span></span><div class="opts" id="growPick"></div></div>
+      </div>
+      <div class="grow-scene">
+        <div class="scene-box" id="scene"></div>
+        <div class="readout" id="readout"></div>
+        <p class="fine" style="padding:14px 20px;border-top:1px solid var(--line)">Illustrative. Assumes a 1.5 ft tree at planting and good weed control, as NRCS assumes for its 20-year heights. Prime, typical and tough use the top, middle and bottom of the NRCS range. Blue bar: NRCS 20-year height range. Dashed line: mature height.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mod alt" id="windbreak" aria-labelledby="wb-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Windbreak designer</span><b>10H rule</b></div><h2 id="wb-h">Design the windbreak. See the shelter.</h2></div>
+      <p class="lede">A windbreak shelters roughly ten times its height downwind and piles the deepest snow within about three times its height. Set the length and rows; the plan redraws to scale.</p>
+    </div>
+    <div class="console split wb">
+      <div class="wb-ctl">
+        <div class="field"><label class="label" for="wbLen">Windbreak length (ft)</label><input type="number" id="wbLen" min="50" max="5000" step="10" inputmode="numeric"></div>
+        <div class="field"><span class="label">Site quality</span><div class="seg" id="wbSoil"></div></div>
+        <div class="field"><span class="label">Rows, windward first · 20 ft apart</span><div id="wbRows" style="display:grid;gap:14px"></div><button class="btn sm" type="button" id="wbAdd">Add row</button></div>
+        <p class="fine">Spacing defaults follow the NRCS Bismarck Plant Materials Center trial layout: shrubs 5 ft apart, trees 10 ft, rows 20 ft.</p>
+      </div>
+      <div class="wb-out">
+        <div class="metrics" id="wbMetrics"></div>
+        <div class="plan-box" id="wbPlan"></div>
+        <div class="wb-foot"><span class="label" id="wbSummary"></span><button class="btn primary sm" type="button" id="wbToCart">Add plan to reservation</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mod" id="catalog" aria-labelledby="cat-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>2027 retail lineup</span><b>$20 flat</b></div><h2 id="cat-h">Thirteen trees for hard winters.</h2></div>
+      <p class="lede">Trade-gallon trees grown on in the Turtle Mountains, ready to plant the day you pick them up. Every species is rated zone 3 or colder. Tap + to reserve; nothing is charged until pickup is confirmed.</p>
+    </div>
+    <div id="catGroups"></div>
+    <div class="ws" id="wholesale">
+      <div class="ws-head">
+        <div><div class="eyebrow"><i></i><span>Wholesale seedlings</span><b>Spring 2029</b></div><h3 style="margin-top:12px;font-size:32px">Conservation stock, limited run</h3></div>
+        <p class="lede" style="max-width:48ch;font-size:15px">Bareroot and cutting-grown seedlings for conservation districts and farmers. Minimum 25 per species, pickup only. Note your interest and Tanner follows up with pricing.</p>
+      </div>
+      <div class="tbl-box"><table><thead><tr><th scope="col">Species</th><th scope="col">Scientific name</th><th scope="col">NRCS 20-yr height</th><th scope="col">Best use</th><th scope="col">Seedlings</th></tr></thead><tbody id="wsBody"></tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<section class="mod alt" id="plant" aria-labelledby="plant-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Planting guide</span><b>6 steps</b></div><h2 id="plant-h">Plant it right the first time.</h2></div>
+      <p class="lede">NRCS names grass competition and dry soil as the big hurdles for new trees in North Dakota, not cold. These steps cover a potted tree in a yard or a windbreak row.</p>
+    </div>
+    <ol class="guide">
+      <li><h4>Pick the spot</h4><p>Check the mature height and spread on the tree's card. Stay clear of power lines, septic fields and foundations, and put windbreaks upwind of what you're protecting.</p></li>
+      <li><h4>Dig wide, not deep</h4><p>Make the hole two to three times as wide as the pot and no deeper than the root ball, so the tree sits at the same level it grew in the pot.</p></li>
+      <li><h4>Loosen the roots</h4><p>Slide the tree out and tease apart any roots circling the pot so they grow out into your soil instead of around themselves.</p></li>
+      <li><h4>Backfill and soak</h4><p>Refill with the soil you dug out, firm it gently by hand, and soak the hole right away to settle out air pockets.</p></li>
+      <li><h4>Mulch and kill the grass</h4><p>Spread a few inches of wood chips in a wide ring, kept off the trunk, and keep grass and weeds out of that ring until the tree is well established.</p></li>
+      <li><h4>Water the first seasons</h4><p>Soak deeply once a week whenever it doesn't rain, through the first summer and into fall before freeze-up. Guard against deer and rabbits with a cage or tree shelter.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="mod" id="ask" aria-labelledby="ask-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Ask the nursery</span><b>AI advisor</b></div><h2 id="ask-h">Ask about your site.</h2></div>
+      <p class="lede">Describe your yard, farmstead or shoreline. The advisor works from this site's catalog, soil notes and windbreak rules. For anything that needs eyes on the ground, call Tanner.</p>
+    </div>
+    <div class="console split ask">
+      <div class="chat">
+        <div class="log" id="log" aria-live="polite"><div class="msg bot"><span class="label who">Turtle Mountain Forest Nursery</span>Tell me where you're planting and what you want the trees to do. I'll point you to species from the 2027 lineup and flag anything your soil won't like.</div></div>
+        <form class="compose" id="askForm">
+          <label class="sr" for="askIn">Your question</label>
+          <input type="text" id="askIn" autocomplete="off" maxlength="600" placeholder="e.g. 300 ft of windbreak on sandy ground north of my yard">
+          <button class="btn primary sm" type="submit" id="askSend">Ask</button>
+          <button class="btn sm" type="button" id="askStop" hidden>Stop</button>
+        </form>
+      </div>
+      <aside class="ask-side">
+        <div class="status" id="askStatus"><span class="dot"></span><span>Checking the advisor…</span></div>
+        <span class="label">Try one</span>
+        <div id="askChips" style="display:grid;gap:8px"></div>
+        <p class="fine">Answers are generated by AI and can be wrong. Confirm anything important with Tanner before you buy or plant.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="mod alt" id="roadmap" aria-labelledby="road-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Mission timeline</span><b>2024 → 2029</b></div><h2 id="road-h">A young nursery on a real timeline.</h2></div>
+      <p class="lede">Founded in 2024 by Tanner Lord in Bottineau County. Two experimentation years, a production rebuild, then the first retail crop.</p>
+    </div>
+    <div class="road" id="road"></div>
+  </div>
+</section>
+
+<section class="mod" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Questions</span><b>Before you reserve</b></div><h2 id="faq-h">Straight answers.</h2></div>
+      <p class="lede">Anything else, call or text <a href="tel:+17012631669">(701) 263-1669</a>.</p>
+    </div>
+    <div class="faq"><!--FAQ--></div>
+  </div>
+</section>
+
+<section class="mod alt" id="reserve" aria-labelledby="res-h">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><div class="eyebrow"><i></i><span>Reservations</span><b>No payment now</b></div><h2 id="res-h">Reserve your 2027 trees.</h2></div>
+      <p class="lede">Quantities are limited each season. Send your list and Tanner gets it by email right away, then contacts you to confirm and schedule pickup.</p>
+    </div>
+    <div class="console split res">
+      <form class="res-main" id="resForm" novalidate>
+        <div>
+          <div class="label" style="margin-bottom:12px">2027 potted trees · $20 each</div>
+          <div id="resLines"></div>
+          <div class="total-row"><span class="label">Retail total</span><span class="v" id="resTotal">$0</span></div>
+        </div>
+        <div>
+          <div class="label" style="margin-bottom:12px">Spring 2029 seedling interest · priced on request</div>
+          <div id="resWs"></div>
+        </div>
+        <div class="form-grid">
+          <div class="field full"><label class="label" for="rName">Name</label><input type="text" id="rName" autocomplete="name" maxlength="120" required></div>
+          <div class="field"><label class="label" for="rPhone">Phone</label><input type="tel" id="rPhone" autocomplete="tel" maxlength="40" placeholder="Phone or email is required"></div>
+          <div class="field"><label class="label" for="rEmail">Email</label><input type="email" id="rEmail" autocomplete="email" maxlength="160"></div>
+          <div class="field"><label class="label" for="rPickup">Pickup</label><select id="rPickup"></select></div>
+          <div class="field"><label class="label" for="rHeard">How did you hear about us?</label><select id="rHeard"></select></div>
+          <div class="field full"><label class="label" for="rNotes">Notes</label><textarea id="rNotes" maxlength="2000" placeholder="Where you're planting, timing, questions"></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="rLeaveBlank">Leave this field empty</label><input type="text" id="rLeaveBlank" name="tm_leave_blank" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore data-bwignore></div>
+        </div>
+        <div class="form-acts"><button class="btn primary" type="submit" id="resSave">Send reservation</button><button class="btn" type="button" id="resCopy">Copy summary</button></div>
+        <div class="msgline" id="resMsg" aria-live="polite"></div>
+        <textarea class="copy-area" id="resText" readonly hidden aria-label="Reservation summary"></textarea>
+      </form>
+      <div class="res-main done-panel" id="resDone" hidden aria-live="polite">
+        <div class="eyebrow"><i></i><span>Reservation sent</span></div>
+        <div class="oid" id="doneId">TM27-XXXXX</div>
+        <p>Tanner has your list. He'll reach out at <strong id="doneContact"></strong> to confirm your trees and set a pickup time. Keep your reservation number handy.</p>
+        <textarea class="copy-area" id="doneText" readonly aria-label="Your reservation"></textarea>
+        <div class="form-acts"><button class="btn" type="button" id="doneCopy">Copy for your records</button><button class="btn primary" type="button" id="doneNew">Start another reservation</button></div>
+      </div>
+      <aside class="res-side">
+        <div><span class="label">How it works</span>
+          <ol class="side-list" style="margin-top:12px"><li>Add trees with the + buttons, the tree finder or the windbreak designer.</li><li>Send your list. Nothing is charged.</li><li>Tanner confirms by phone or email and sets aside your trees when the 2027 crop is ready.</li><li>Pick up at the nursery in Bottineau County.</li></ol>
+        </div>
+        <div class="contact"><span class="label">Reach Tanner directly</span>
+          <div class="contact-row"><a id="cEmail" href="mailto:TannerGilbertLord@gmail.com">TannerGilbertLord@gmail.com</a><button class="btn sm" type="button" data-copy="cEmail">Copy</button></div>
+          <div class="contact-row"><a id="cPhone" href="tel:+17012631669">(701) 263-1669</a><button class="btn sm" type="button" data-copy="cPhone">Copy</button></div>
+          <a class="ext" href="https://www.instagram.com/TMForestNursery/" target="_blank" rel="noopener">Instagram @TMForestNursery ↗</a>
+          <a class="ext" href="/order-form/">Printable order form ↗</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><a class="brand" href="#top"><img src="/favicon.svg" alt="" width="32" height="32">Turtle Mountain Forest Nursery</a><p>Founded 2024 in Bottineau County, North Dakota. Zone 3 and colder seedlings and trees for reforestation, conservation, and landscaping.</p></div>
+    <div>
+      <span class="label">Contact</span>
+      <p style="color:var(--fg)"><a href="mailto:TannerGilbertLord@gmail.com">TannerGilbertLord@gmail.com</a><br><a href="tel:+17012631669">(701) 263-1669</a><br>Bottineau County, ND · pickup only</p>
+      <a class="ext" href="https://websoilsurvey.nrcs.usda.gov/app/" target="_blank" rel="noopener">Look up your parcel's soil ↗</a>
+    </div>
+    <div>
+      <span class="label">Sources</span>
+      <ol>
+        <li><a href="https://efotg.sc.egov.usda.gov/references/public/ND/Expected_20-Year_Tree_Heights.pdf" target="_blank" rel="noopener">Expected 20-Year Tree Heights</a>, USDA-NRCS North Dakota, rev. Jan 2026</li>
+        <li><a href="https://soilseries.sc.egov.usda.gov/OSD_Docs/B/BOTTINEAU.html" target="_blank" rel="noopener">Bottineau series</a>, NRCS Official Soil Series Description</li>
+        <li><a href="https://extensionpubs.unl.edu/publication/ec1763/2006/pdf/view/ec1763-2006.pdf" target="_blank" rel="noopener">How Windbreaks Work</a>, University of Nebraska Extension EC1763</li>
+        <li><a href="https://news.prairiepublic.org/podcast/natural-north-dakota/2025-09-27/whats-behind-bottineaus-curious-quicksand-sign" target="_blank" rel="noopener">Bottineau's quicksand sign</a>, Prairie Public, Sept 2025</li>
+        <li><a href="https://planthardiness.ars.usda.gov/" target="_blank" rel="noopener">2023 Plant Hardiness Zone Map</a>, USDA ARS</li>
+        <li><a href="https://www.ndsu.edu/sites/default/files/documents/Towner_State_Nursery_2027-Web-Catalog_0.pdf" target="_blank" rel="noopener">Planting window</a>, ND Forest Service, Towner State Nursery 2027 catalog</li>
+      </ol>
+    </div>
+  </div>
+  <div class="wrap foot-base">
+    <span class="label">© 2024–<!--YEAR--> Turtle Mountain Forest Nursery · species subject to seasonal availability<!--PHOTOCREDIT--></span>
+    <span class="label"><a href="/order-form/">Order form</a></span>
+  </div>
+</footer>
+
+<div class="cartbar" id="cartbar" aria-live="polite">
+  <div class="wrap"><div><b id="cbTrees">0 trees</b><br><span id="cbTotal">$0</span></div><a href="#reserve">Review &amp; send</a></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="/assets/app.js"></script>
+</body>
+</html>

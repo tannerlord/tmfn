@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Owner Dashboard · Turtle Mountain Forest Nursery</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#060a08">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/"><img src="/favicon.svg" alt="" width="32" height="32"><span>Turtle Mountain <span class="soft">Owner</span></span></a>
+    <nav class="links" aria-label="Owner"><a href="#supply">Supply</a><a href="#orders">Reservations</a><a href="/">Public site</a></nav>
+    <button class="btn sm no-print" type="button" id="logout" hidden>Sign out</button>
+  </div>
+</header>
+<main class="mod" style="border:0">
+  <div class="wrap">
+    <section id="loginBox" class="login" hidden>
+      <div class="eyebrow"><i></i><span>Owner dashboard</span></div>
+      <h2>Sign in</h2>
+      <p class="lede" style="font-size:15px">Enter the owner key you set with <code>npx wrangler secret put OWNER_KEY</code>. It stays in this browser only.</p>
+      <form id="loginForm" class="login">
+        <label class="label" for="key">Owner key</label>
+        <input type="password" id="key" autocomplete="current-password" required>
+        <button class="btn primary" type="submit">Open dashboard</button>
+        <div class="msgline" id="loginMsg" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section id="dash" hidden>
+      <div class="owner-top">
+        <div><div class="eyebrow"><i></i><span>Owner dashboard</span><b id="asOf"></b></div><h2 style="margin-top:14px">2027 reservations</h2></div>
+        <div class="filters no-print"><button class="btn sm" type="button" id="refresh">Refresh</button><button class="btn sm" type="button" id="csv">Export CSV</button><button class="btn sm" type="button" id="print">Print pick list</button></div>
+      </div>
+      <div class="status no-print" id="health" style="margin-bottom:18px"><span class="dot"></span><span>Checking setup…</span></div>
+      <div class="console"><div class="metrics" id="metrics"></div></div>
+
+      <section id="supply" style="margin-top:40px">
+        <div class="cat-group-head"><h3>Supply vs. reservations</h3><span class="label">Grown = trees ordered for the 2027 crop · canceled reservations excluded</span></div>
+        <div class="console"><div class="supply" id="supplyRows"></div></div>
+        <div class="cat-group-head" style="margin-top:22px"><h3>Spring 2029 seedling interest</h3><span class="label">Total seedlings requested</span></div>
+        <div class="console"><div class="supply" id="wsRows"></div></div>
+      </section>
+
+      <section id="orders" style="margin-top:40px">
+        <div class="cat-group-head"><h3>Reservations</h3><span class="label" id="shown"></span></div>
+        <div class="filters no-print" style="margin-bottom:16px">
+          <div class="opts" id="statusFilter" style="margin:0"></div>
+          <label class="sr" for="q">Search</label><input type="search" id="q" placeholder="Search name, phone, email, number" style="max-width:320px">
+        </div>
+        <div id="list"></div>
+      </section>
+    </section>
+  </div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="/assets/owner.js"></script>
+</body>
+</html>

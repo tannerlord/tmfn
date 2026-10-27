@@ -1,0 +1,43 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "turtle-mountain-forest-nursery",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-10-20",
+  "observability": { "enabled": true },
+
+  // The website: everything in /public. Only /api/* runs Worker code.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
+    "not_found_handling": "404-page"
+  },
+
+  // Reservations. Wrangler 4.45+ creates this KV namespace on first deploy and writes its id back here.
+  "kv_namespaces": [{ "binding": "ORDERS" }],
+
+  // Order emails. Needs Email Routing turned on for turtlemountainforestnursery.com
+  // and tannergilbertlord@gmail.com verified as a destination address (see README).
+  "send_email": [{ "name": "EMAIL", "destination_address": "tannergilbertlord@gmail.com" }],
+
+  // AI advisor (Workers AI). Remove this block to switch the advisor off.
+  "ai": { "binding": "AI" },
+
+  "vars": {
+    "OWNER_EMAIL": "tannergilbertlord@gmail.com",
+    "FROM_EMAIL": "orders@turtlemountainforestnursery.com",
+    "AI_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+  }
+
+  // After testing on the workers.dev link, remove the domain from your old Pages project,
+  // then uncomment this and run `npm run deploy` again:
+  // ,"routes": [
+  //   { "pattern": "turtlemountainforestnursery.com", "custom_domain": true },
+  //   { "pattern": "www.turtlemountainforestnursery.com", "custom_domain": true }
+  // ]
+  //
+  // Once turtlemountainforestnursery.com loads and a test reservation reaches your inbox,
+  // uncomment this too and deploy again. It turns off the workers.dev copy of the site,
+  // so nobody keeps reserving on a test link:
+  // ,"workers_dev": false
+}
