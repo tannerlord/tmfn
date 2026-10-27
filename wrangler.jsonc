@@ -31,10 +31,10 @@
 
   // After testing on the workers.dev link, remove the domain from your old Pages project,
   // then uncomment this and run `npm run deploy` again:
-  // ,"routes": [
-  //   { "pattern": "turtlemountainforestnursery.com", "custom_domain": true },
-  //   { "pattern": "www.turtlemountainforestnursery.com", "custom_domain": true }
-  // ]
+   ,"routes": [
+     { "pattern": "turtlemountainforestnursery.com", "custom_domain": true },
+     { "pattern": "www.turtlemountainforestnursery.com", "custom_domain": true }
+   ]
   //
   // Once turtlemountainforestnursery.com loads and a test reservation reaches your inbox,
   // uncomment this too and deploy again. It turns off the workers.dev copy of the site,
